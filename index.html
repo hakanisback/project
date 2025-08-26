@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychology Student Grade Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Psychology Student Grade Tracker</h1>
+            <p>Track your academic progress in psychology courses</p>
+        </header>
+
+        <main>
+            <section class="course-management">
+                <h2>Course Management</h2>
+                <div class="add-course">
+                    <input type="text" id="course-name" placeholder="Course Name (e.g., Cognitive Psychology)">
+                    <input type="number" id="course-credits" placeholder="Credits" min="1" max="6" value="3">
+                    <button onclick="addCourse()">Add Course</button>
+                </div>
+            </section>
+
+            <section class="gpa-display">
+                <div class="gpa-card">
+                    <h3>Current GPA</h3>
+                    <div class="gpa-value" id="current-gpa">0.00</div>
+                    <div class="total-credits">Total Credits: <span id="total-credits">0</span></div>
+                </div>
+            </section>
+
+            <section class="courses-list">
+                <h2>Your Psychology Courses</h2>
+                <div id="courses-container">
+                    <div class="no-courses">
+                        <p>No courses added yet. Add your first psychology course above!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
